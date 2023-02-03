@@ -1,0 +1,44 @@
+body{
+    background-color: #dfd0b3;
+}
+
+nav{
+    background-color: #5b4115;
+}
+
+
+nav li{
+    display:inline-block;
+    padding: 20px;
+    font-size: 30px;
+}
+
+nav a{
+    text-align: center;
+}
+
+.index_nav{
+    background-color: bisque;
+    padding:20px;
+
+}
+
+.main_img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:10%;
+    width:80%;    
+}
+
+.history_img{
+    width:45%;
+    margin-left: 25px;
+}
+
+.skip{
+    position: absolute;
+    left: -1000px;
+}
+
+
