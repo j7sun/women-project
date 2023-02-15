@@ -3,7 +3,8 @@ body{
 }
 
 nav{
-    background-color: #5b4115;
+    background-color: #d9b876;
+    padding:20px;
 }
 
 
@@ -11,19 +12,30 @@ nav li{
     display:inline-block;
     padding: 20px;
     font-size: 30px;
+    background: #f0e0c240;
 }
 
-nav a{
+
+nav li a{
     text-align: center;
+    text-decoration: none;
+    color: #4d3626;
 }
 
-.index_nav{
-    background-color: bisque;
-    padding:20px;
+nav li.active{
+    background:#e6d3b1
+}
+
+div{
+    display: block;
 
 }
 
-.main_img{
+main{
+    margin: 10px 40px;
+}
+
+#main_img{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -31,14 +43,35 @@ nav a{
     width:80%;    
 }
 
-.history_img{
-    width:45%;
-    margin-left: 25px;
+img:not(#main_img){
+    display: block;
+    padding:5px;
+    border-style:solid;
+    border-color: #8a6144;
+    border-width: 5px;
+
 }
 
+img:not(#main_img):hover{
+    background: brown;
+}
+
+img:not(#main_img):nth-of-type(even){
+    border-style: dashed;
+    border-color: black;
+}
+
+h1{
+    font-size: 40px;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+h2{
+    font-size: 30px;
+}
 .skip{
     position: absolute;
     left: -1000px;
 }
-
 
