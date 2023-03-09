@@ -1,3 +1,16 @@
+
+
+nav li{
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 30px;
+    background: #f0e0c240;
+}
+
+@media screen and (min-width: 500px){
+
+
 body{
     background-color: #dfd0b3;
 }
@@ -23,7 +36,11 @@ nav li a{
 }
 
 nav li.active{
-    background:#e6d3b1
+    background:#543c13;
+}
+
+nav li a.active{
+    color: whitesmoke;
 }
 
 div{
@@ -74,4 +91,8 @@ h2{
     position: absolute;
     left: -1000px;
 }
+}
 
+
+
+    
