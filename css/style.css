@@ -124,6 +124,7 @@ h2{
 footer{
     background-color:#d9b876;
     padding:20px;
+    margin-top: 105px;
 }
 
 @media screen and (min-width: 500px){
