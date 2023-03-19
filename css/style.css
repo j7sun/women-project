@@ -3,6 +3,15 @@
     background-image: url(../images/beige.jpeg);
 }
 
+.skip{
+    position: absolute;
+    left: -1000px;
+}
+
+.skip:focus{
+    left:0;
+}
+
 
 body{
     background-color: #dfd0b3;
@@ -10,19 +19,20 @@ body{
 
 nav{
     background-color: #d9b876;
-    padding:10px;
+    margin-right:10px;
 }
 
 nav ul{
     display:flex;
+    padding:10px;
     flex-direction: column;
-    padding: 2px;
     background: #f0e0c240;
+    margin-right:10px;
 }
 
 nav li{
     display:inline-block;
-    padding: 5px;
+    padding: 10px;
     font-size: 15px;
     background: #f0e0c240;
 }
@@ -100,6 +110,7 @@ main .grid div:nth-child(odd) img{
     border-width: 5px;
 }
 
+
 h1{
     font-family: Arial,Helvetica, sans-serif;
     font-size: 40px;
@@ -112,60 +123,165 @@ h2{
     font-size: 30px;
     font-family: "lato",Arial, Helvetica, sans-serif;
 }
-.skip{
-    position: absolute;
-    left: -1000px;
-}
+
 
 .index_div p{
     padding:10px;
-}
-
-footer{
-    background-color:#d9b876;
-    padding:20px;
-    margin-top: 105px;
-}
-
-@media screen and (min-width: 500px){
-nav{
-    background-color: #d9b876;
-    padding:20px;
-}
-
-nav ul{
-   flex-direction: row;
-   padding:5px;
-   background-color: #d9b876;
-}
-
-nav li{
-    display:inline-block;
-    padding-right: 60px;
-    padding-left:20px;
-    padding-top:20px;
-    font-size: 25px;
-    margin-left:3px;
-    background: #f0e0c240;
+    font-size: 20px;
 }
 
 .grid{
     display:grid;
     width:90%;
     margin-left:50px;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 100%;
+    grid-row-gap: 10px;
     justify-content: space-around;
-    
 }
 
-
+.grid div{
+    background-color: #cab38c7d;
+    margin-right:70px;
+    border-radius: 20px;
+    padding:30px;
+    box-shadow: 5px 5px #cab38c;
+}
 
 dl{
     display:grid;
-    width:90%;
-    margin-left:50px;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 90%;
+    grid-row-gap: 10px;
 }
+
+dl div{
+    margin:40px;
+    border-radius:15px;
+    background-color: #cab38c;
+    box-shadow: 8px 8px #726b5e;
+    padding:10px;
+}
+
+dt{
+   font-size:25px; 
+   font-weight: bold;
+   font-style: italic;
+   margin:10px;
+   text-decoration: underline;
+   text-underline-offset: 6px;
+}
+
+dd{
+    font-weight: bold;
+    font-size:20px;
+    margin-top:5px;
+    margin:10px;
+}
+
+dd p{
+    font-size:17px;
+}
+
+
+footer{
+    background-color:#d9b876;
+    padding:20px;
+    margin-top: 30px;
+}
+
+@media screen and (min-width: 500px){
+
+    .grid{
+        grid-template-columns: 45% 45%;
+    }
+
+    nav{
+        background-color: #d9b876;
+        padding:20px;
+    }
+
+    nav ul{
+        flex-direction: row;
+        padding:5px;
+        background-color: #d9b876;
+     }
+
+     nav li{
+        display:inline-block;
+        padding-right: 60px;
+        padding-left:20px;
+        padding-top:20px;
+        font-size: 25px;
+        margin-left:3px;
+        background: #f0e0c240;
+    }
+
+    dl{
+        display:grid;
+        grid-template-columns: 45% 45%;
+        grid-row-gap: 10px;
+    }
+
+    
+    footer p{
+        text-align: center;
+
+    }
+
+    .tops{
+        display: block;
+        text-align: center;
+    }
+
+}
+
+
+
+@media screen and (min-width: 800px){
+    nav{
+        background-color: #d9b876;
+        padding:20px;
+        margin-right:30px;
+    }
+    
+    nav ul{
+       flex-direction: row;
+       padding:5px;
+       background-color: #d9b876;
+    }
+    
+    nav li{
+        display:inline-block;
+        padding-right: 60px;
+        padding-left:20px;
+        padding-top:20px;
+        font-size: 25px;
+        margin-left:3px;
+        background: #f0e0c240;
+    }
+    
+    .grid{
+        display:grid;
+        width:90%;
+        margin-left:50px;
+        grid-template-columns: 33% 33% 33%;
+        grid-row-gap: 10px;
+        justify-content: space-around;
+    }
+    
+    .grid div{
+        background-color: #cab38c7d;
+        margin-left: 30px;
+        border-radius: 20px;
+        padding:30px;
+        box-shadow: 5px 5px #cab38c;
+    }
+
+    footer{
+        margin-top:75px;
+    }
+    
+    
+    
 }
 
 @media (prefers-reduced-motion) {
