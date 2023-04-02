@@ -19,7 +19,8 @@ body{
 
 nav{
     background-color: #d9b876;
-    margin-right:10px;
+    
+    
 }
 
 nav ul{
@@ -51,6 +52,27 @@ nav li.active{
 nav li a.active{
     color: whitesmoke;
 }
+
+#dark{
+    color:white;
+    background:black;
+    padding:10px;
+    margin-left: auto;
+    margin-bottom:60px;
+    border-radius: 10px;;
+}
+
+.lightsOff{
+    filter: grayscale(100%);
+    background:black;
+    color:whitesmoke;
+}
+
+#flexbox{
+    display:flex;
+    align-items: center;
+}
+
 
 div{
     display: block;
@@ -239,8 +261,7 @@ footer{
 @media screen and (min-width: 800px){
     nav{
         background-color: #d9b876;
-        padding:20px;
-        margin-right:30px;
+        padding:10px;
     }
     
     nav ul{
